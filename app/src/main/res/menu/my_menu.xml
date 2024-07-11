@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/rate"
+        android:icon="@drawable/rate"
+        android:iconTint="#4F6F52"
+        android:title="Rate us">
+
+    </item>
+    <item android:id="@+id/share"
+        android:icon="@drawable/share"
+        android:iconTint="#4F6F52"
+        android:title="Share app">
+
+    </item>
+    <item android:id="@+id/contact"
+        android:icon="@drawable/contact"
+        android:iconTint="#4F6F52"
+
+        android:title="To contact">
+
+    </item>
+
+    <item android:id="@+id/exit"
+        android:icon="@drawable/img_6"
+
+        android:iconTint="#4F6F52"
+
+        android:title="Exit">
+
+    </item>
+</menu>

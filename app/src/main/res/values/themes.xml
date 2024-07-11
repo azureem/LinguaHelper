@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.LinguaHelper" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+      <item name="colorPrimary">#4F6F52</item>
+    </style>
+
+    <style name="Theme.LinguaHelper" parent="Base.Theme.LinguaHelper" />
+</resources>

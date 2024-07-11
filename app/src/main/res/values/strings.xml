@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LinguaHelper</string>
+    <string name="speech_string">Please, speak!</string>
+    <string name="saved_words">Saved Words</string>
+    <string name="word_description">Word description</string>
+    <string name="ssss">Glossary</string>
+</resources>

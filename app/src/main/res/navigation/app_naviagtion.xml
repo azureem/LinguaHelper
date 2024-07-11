@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_naviagtion"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        android:id="@+id/mainView"
+        android:name="com.example.linguahelper.presentation.screens.main.MainView"
+        android:label="MainView"
+        tools:layout="@layout/screen_main">
+        <action
+            android:id="@+id/action_mainView_to_wordView"
+            app:destination="@id/wordView" />
+        <action
+            android:id="@+id/action_mainView_to_favikScreen"
+            app:destination="@id/favikScreen" />
+        <action
+            android:id="@+id/action_mainView_to_homeScreen"
+            app:destination="@id/homeScreen" />
+    </fragment>
+    <fragment android:id="@+id/wordView"
+        android:name="com.example.linguahelper.presentation.screens.word.WordView"
+        tools:layout="@layout/screen_word">
+        <action
+            android:id="@+id/action_wordView_to_mainView"
+            app:destination="@id/mainView" />
+    </fragment>
+
+    <fragment android:id="@+id/favikScreen"
+        android:name="com.example.linguahelper.presentation.screens.favourite.FavouriteView"
+        tools:layout="@layout/screen_favourites">
+
+        <action
+            android:id="@+id/favikScreen_to_wordView"
+            app:destination="@id/wordView" />
+        <action
+            android:id="@+id/action_favikScreen_to_mainView"
+            app:destination="@id/mainView" />
+    </fragment>
+    <fragment android:id="@+id/homeScreen"
+        android:name="com.example.linguahelper.presentation.screens.home.HomeScreen"
+        tools:layout="@layout/screen_home">
+        <action
+            android:id="@+id/homeScreen_to_mainView"
+            app:destination="@id/mainView" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashScreen"
+        tools:layout="@layout/screen_splash"
+        android:name="com.example.linguahelper.presentation.screens.SplashScreen"
+        android:label="SplashScreen" >
+        <action
+            android:id="@+id/action_splashScreen_to_homeScreen"
+            app:destination="@id/homeScreen"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
